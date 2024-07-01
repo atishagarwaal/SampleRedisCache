@@ -36,5 +36,6 @@ class Program
 
         // Close the Redis connection (usually done at the end of your application)
         redis.Close();
+
     }
 }
