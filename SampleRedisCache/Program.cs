@@ -12,8 +12,8 @@ class Program
         //string redisCacheEndpoint = "<your-redis-cache-endpoint.redis.cache.windows.net>";
 
         // Create the connection to Azure Redis Cache
-        var redisConnStr = $"{redisCacheName}.redis.cache.windows.net:6380,password={redisCacheKey},ssl=True,abortConnect=False";
-        var redis = ConnectionMultiplexer.Connect(redisConnStr);
+        ////var redisConnStr = $"{redisCacheName}.redis.cache.windows.net:6380,password={redisCacheKey},ssl=True,abortConnect=False";
+        ////var redis = ConnectionMultiplexer.Connect(redisConnStr);
 
         // Get a reference to the Redis database
         var db = redis.GetDatabase();
